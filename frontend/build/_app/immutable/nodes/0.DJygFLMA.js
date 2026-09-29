@@ -1,1 +1,0 @@
-import{B as e,S as t,_ as n,nt as r,x as i}from"../chunks/oE4E3sf0.js";import"../chunks/xihTtKlq.js";import"../chunks/CavekYLT.js";var a=r({prerender:()=>!1,ssr:()=>!1});function o(r,a){var o=t(),s=e(o);n(s,a,`default`,{},null),i(r,o)}export{o as component,a as universal};
