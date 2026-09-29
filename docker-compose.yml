@@ -1,0 +1,21 @@
+services:
+  pustaka:
+    build:
+      context: .
+      dockerfile: Dockerfile
+    container_name: pustaka
+    restart: unless-stopped
+    expose:
+      - "8080"
+    volumes:
+      - ./data:/app/database
+    environment:
+      - PORT=8080
+      - GIN_MODE=release
+    networks:
+      - caddy-net
+
+networks:
+  caddy-net:
+    external: true
+    name: caddy-net

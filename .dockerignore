@@ -1,0 +1,13 @@
+.git
+.gitignore
+frontend/node_modules
+frontend/build
+frontend/.svelte-kit
+database/*.db
+database/*.db-shm
+database/*.db-wal
+database/book
+database/cover
+.venv-go
+*.md
+activate.sh
