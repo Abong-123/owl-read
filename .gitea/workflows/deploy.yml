@@ -1,0 +1,18 @@
+name: Build & Deploy
+
+on:
+  push:
+    branches: [main]
+
+jobs:
+  build-and-deploy:
+    runs-on: ubuntu-latest
+    steps:
+      - name: Checkout
+        uses: actions/checkout@v4
+
+      - name: Build & restart container
+        run: |
+          cd /root/project/repo
+          docker compose down
+          docker compose up -d --build
