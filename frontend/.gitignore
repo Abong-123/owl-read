@@ -1,0 +1,29 @@
+# Go
+.venv-go/
+*.exe
+*.test
+
+# Node
+frontend/node_modules/
+frontend/.svelte-kit/
+frontend/build/
+
+# Database (jangan commit data user)
+database/*.db
+database/*.db-shm
+database/*.db-wal
+database/book/*
+database/cover/*
+!database/book/.gitkeep
+!database/cover/.gitkeep
+
+# OS
+.DS_Store
+Thumbs.db
+
+# IDE
+.vscode/
+.idea/
+
+# Env
+.env
